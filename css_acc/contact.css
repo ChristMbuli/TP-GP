@@ -1,0 +1,149 @@
+body{
+	margin: 0;
+	padding: 0;
+	
+	
+
+}
+.logo img{
+      width: 100px;
+      
+}
+
+ul{
+display: flex;
+
+}
+ul li{
+	list-style: none;
+
+}
+ul li a{
+	position: relative;
+	display: block;
+	padding: 20px 10px;
+	margin: 20px 0;
+  margin-left: 50px;
+	text-decoration: none;
+	color: #262626;
+	font-weight: bold;
+	transition: .5s;
+	margin-right: 100px;
+
+}
+ul li a:hover{
+	color: rgb(248, 247, 247);
+}
+ul li a:hover:before{
+transform: scaleY(1);
+}
+ul li a:after{
+	content: "";
+	position: absolute;
+	top: 1px;
+	left: 0;
+	background:#477d87;
+	width: 100%;
+	height: 100%;
+	border-top:1px solid #477d87;
+		border-bottom:1px solid #477d87;
+transform: scaleY(0);
+opacity: 0;
+transition: .5s;
+ z-index: -1;
+
+}
+ul li a:hover:after{
+transform: scaleY(1);
+opacity: 1;
+}
+.contact{
+	background-color: #A9A9A9;
+	box-shadow: 2px 2px 12px rgba(0,0,0, 0.8);
+	width: 100%
+	background-position: unset;
+	position:center;
+}
+
+
+
+.contactform{
+	padding: 75px 50px;
+	background: #fff;
+	box-shadow: 5px 15px 50px;
+	max-width: 500px;
+	margin-top: 50px;
+	justify-content: center;
+	align-items: center;
+	margin-left: 38%;
+}
+
+.contactform .inputboite{
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.contactform h3{
+	color: #111;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+
+}
+
+.contactform .inputboite input,
+.contactform .inputboite textarea{
+	width: 100%;
+	border:1px solid #555;
+	padding: 10;
+	color:#111;
+	outline: none;
+	font-size: 16px;
+	font-weight: 300px;
+	resize: none;
+}
+
+.contactform .inputboite input[type="submit"]{
+	font-size: 1em;
+	font-weight: 70;
+	color: #fff;
+	background:#795243  ;
+	display: inline-block;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	outline: none;
+	transition: 0.5s;
+	max-width: 120px;
+	align-items: center;
+	justify-content: center;
+}
+
+.copyright{
+	padding: 20px 40px;
+	border-top: 2px solid;
+	background:rgba(228,222,222,);
+	text-align: center;
+}
+
+.copyright p:nth-child(1){
+	color:black;
+	font-weight: 600;
+	font-style: italic;
+}
+
+header .sticky{
+	background:#fff;
+	padding: 10px;
+	box-shadow: 0px 5px 20px rgba(0,0,0 0.05)
+}
+header .sticky .navbar li a{
+	color:#000;
+}
+
+header .sticky li a:hover{
+	color: skyblue;
+	border-bottom: 2px solid skyblue;
+}
+
